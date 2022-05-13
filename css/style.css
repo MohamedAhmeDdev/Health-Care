@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper-container{
+    background-color: #333;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    grid-gap: 10px;
+}
+
+.wrapper-container > div{
+    max-width: 1220px;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 25px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(/images/woodland-road-falling-leaf-natural-38537.jpeg);
+    background-color: antiquewhite;
+    height: 210px;
+}
+

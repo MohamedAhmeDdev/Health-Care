@@ -4,26 +4,113 @@
     box-sizing: border-box;
 }
 
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.navigation{
+    max-width: 100%;
+    padding: 20px;
+    justify-content: space-between;
+    display: flex;
+    height: 70px;
+    width: 100%;
+    background-color: #456268;
+}
+.logo{
+    color: white;
+    font-size: 25px;
+}
+
+.user{
+    list-style: none;
+    color: white;
+    font-size: 20px;
+}
+.button{
+    font-size: 15px;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    height: 35px;
+    width: 70px;
+    background-color: blueviolet;
+}
+
+
 .wrapper-container{
-    background-color: #333;
+    padding: 10px;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(/images/woodland-road-falling-leaf-natural-38537.jpeg);
     grid-template-columns: 1fr 1fr 1fr;
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 5px;
 }
 
 .wrapper-container > div{
-    max-width: 1220px;
-
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
     color: white;
     font-size: 25px;
-    background-size: cover;
-    background-attachment: fixed;
-    background-image: url(/images/woodland-road-falling-leaf-natural-38537.jpeg);
-    background-color: antiquewhite;
+    background-color: black;
+    opacity: 0.6;
     height: 210px;
 }
 
+@media(max-width:500px){
+    .wrapper-container{
+        background-image: none;
+        background-color: white;
+        grid-template-columns: 1fr;
+        display: grid;
+        grid-gap: 10px;
+    }
+    .wrapper-container > div{
+        border-radius: 10px;
+        margin-left: 35px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-size: 25px;
+        background-color: black;
+        opacity: 0.6;
+        width: 300px;
+        height: 210px;
+    }
+
+
+    .navigation{
+        max-width: 100%;
+        padding: 20px;
+        /* justify-content: space-between; */
+        display: flex;
+        height: 70px;
+        width: 100%;
+        background-color: #456268;
+    }
+    .logo{
+        color: white;
+        font-size: 25px;
+    }
+    .user{
+        display: none;
+    }
+    .button{
+        font-size: 15px;
+        color: white;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        height: 35px;
+        width: 70px;
+        background-color: blueviolet;
+    }
+}

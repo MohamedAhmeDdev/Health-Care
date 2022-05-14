@@ -1,5 +1,3 @@
-
-</form>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,22 +9,26 @@
 </head>
 <body>
 
-    <section class="forms">
+    <section class="container">
     <form class="form" id="creatAccount">
+        <p id="error"></p>
         <label for="fname">Name:</label> <br>
-        <input id="input" type="text" placeholder="first Name"> <br><br>
-        <p></p>
+        <input class="input" id="name" type="text" placeholder="first Name">
+        <br><br>
         <label for="email">Email:</label><br>
-        <input id="input"  type="email" placeholder="Email"><br><br>
-        <p></p>
+        <input class="input" id="email"  type="email" placeholder="Email">
+        <br><br>
         <label for="lname">Password</label><br>
-        <input  id="input"  type="text" placeholder="Password"><br><br>
-    
-        <input class="submit" type="submit" value="SUBMIT">
+        <input class="input"  id="password"  type="text" placeholder="Password">
+        <br><br>
+        <input id="submit" type="submit" value="SUBMIT">
         <br>
         <a class="login" id="linkLogin" href="login.html">Login in</a>
-    </form>
-    <section
-    
+    </form>    
+    </section>
+    <script src="/index.js"></script>
 </body>
 </html>
+
+
+

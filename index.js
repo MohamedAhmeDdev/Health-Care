@@ -9,9 +9,7 @@ menu.addEventListener("click", () =>
     side_menu.classList.toggle("active");
 })
 
-// menu.addEventListener("click", ()=>{
-//     list.classList.toggle("show")
-// })
 
+// // form validation
 
 

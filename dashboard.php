@@ -20,7 +20,7 @@
         <h3 id="logo" class="logo">Health Care</h3>
         <ul id="nav-list">
            <li>
-            <a href="">
+            <a href="dashboard.php">
                 <i class="bi bi-speedometer2"></i>
                 <span class="links_name">DASHBOARD</span>
             </a>
@@ -44,7 +44,7 @@
             </a>
            </li>
            <li>
-            <a href="settings.html">
+            <a href="settings.php">
                 <i class="bi bi-gear"></i>
                 <span class="links_name">SETINGS</span>
             </a>

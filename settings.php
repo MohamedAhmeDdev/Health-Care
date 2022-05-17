@@ -23,13 +23,13 @@
         <h3 id="logo" class="logo">Health Care</h3>
         <ul id="nav-list">
            <li>
-            <a href="">
+            <a href="dashboard.php">
                 <i class="bi bi-speedometer2"></i>
                 <span class="links_name">DASHBOARD</span>
             </a>
            </li>
            <li>
-            <a href="">
+            <a href="userinfo.php">
                 <i class="bi bi-person-circle"></i>
                 <span class="links_name">USERS</span>
             </a>

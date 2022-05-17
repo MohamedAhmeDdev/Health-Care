@@ -1,0 +1,36 @@
+/* .div-container{
+    display: flex;
+}
+.users-div{
+    border-radius: 10px;
+    height: 200px;
+    width: 320px;
+    background-color: #A2B38B;
+}
+h6{
+    padding: 3px 20px;
+    font-size: 15px;
+}
+p{
+    color: blue;
+    position: relative;
+    left: 100px;
+    bottom: 30px;
+} */
+
+.account-table{
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 20px;
+    border: 2px solid lightblue;
+}
+
+.account-table th{
+    border-bottom: 2px solid lightblue;
+    color: rgba(0, 0, 0, 0.651);
+    padding: 10px 8px;
+}
+.account-table td{
+    color: blue;
+    padding: 8px 8px;
+}

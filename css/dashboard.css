@@ -4,14 +4,21 @@
     box-sizing: border-box;
 }
 
-body{
-    display: flex;
-}
-.side-bar{
+.sidebar{
     position: relative;
-    height: 657px;
-    width: 340px;
-    background-color: black;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 250px;
+  background: black;
+  padding: 6px 14px;
+  z-index: 99;
+  transition: all 0.5s ease;
+}
+
+.active{
+    width: 78px;
 }
 
 #menu-icon{
@@ -27,6 +34,7 @@ body{
     height: 4px;
     width: 40px;
 }
+ 
 
 .logo{
     color: white;
@@ -36,17 +44,40 @@ body{
     top: 15px;
     left: 20px;
 }
-.side-bar ul{
+.active .logo{
+    display: block;
+}
+
+.sidebar ul{
+    margin-left: -30px;
     position: absolute;
     top: 40px;
     padding:  30px  ;
 }
 
-.side-bar li{
+.sidebar li{
     list-style: none;
 }
 
-.side-bar ul li a{
+.sidebar ul li a{
+    align-items: center;
+    font-size: 17px;
+    padding: 13px;
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+.sidebar ul{
+    position: absolute;
+    top: 40px;
+    padding:  30px  ;
+}
+
+.sidebar li{
+    list-style: none;
+}
+
+.sidebar ul li a{
     align-items: center;
     font-size: 17px;
     padding: 13px;
@@ -55,32 +86,38 @@ body{
     text-decoration: none;
 }
 
-.side-bar li a:hover{
+.sidebar li a:hover{
     border-radius: 10px;
     background-color: white;
     color: black;
 }
-.side-bar span{
+.sidebar span{
     padding-left: 17px;
 }
 
+.active span{
+    display: none;
+}
 .active .logo{
     display: none;
 }
- .active span{
-    display: none;
+
+
+
+/* dashboard  */
+
+.home-section{
+  position: relative;
+  background-color: white;
+  min-height: 100vh;
+  top: 0;
+  left: 250px;
+  width: calc(100% - 250px);
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+.sidebar.active ~ .home-section{
+  left: 78px;
+  width: calc(100% - 78px);
 }
 
-
-.active{
-    width: 100px;
-}
-
-
-/* dashboard */
-
-.dashboard{
-    width: calc(100% - 300px);
-    height: 657px;
-    background-color: white;
-}

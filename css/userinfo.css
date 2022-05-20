@@ -99,6 +99,10 @@
     display: none;
 }
 
+.active .logo{
+    display: none;
+}
+
 
 
 

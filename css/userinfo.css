@@ -126,23 +126,45 @@
 
 
 .account-table{
+    margin: 20px 10%;
     border-collapse: collapse;
-    max-width: 1280px;
+    width: 85%;
     font-size: 20px;
-    border: 2px solid lightblue;
+    border: 2px solid rgba(0, 0, 0, 0.562);
 }
 
-.account-table th{
-    border-bottom: 2px solid lightblue;
+.account-table thead th{
     color: rgba(0, 0, 0, 0.651);
-    padding: 10px 8px;
+    text-align: center;
+    /* padding: 10px; */
+    border: 2px solid rgba(0, 0, 0, 0.562);
+    
 }
-.account-table td{
-    color: blue;
-    padding: 8px 8px;
+
+.account-table tbody  td{
+    text-align: center;
+    background-color: aqua;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.562);
+    color: black;
+    /* padding: 8px 10px; */
 }
 
 
+
+
+
+
+
+
+/* theme change */
+
+/* black */
+.dark .home-section{
+    background-color: #292c35;
+}
+.dark .sidebar{
+    background-color: black;
+}
 
 
 
@@ -165,3 +187,54 @@ p{
     left: 100px;
     bottom: 30px;
 } */
+
+
+
+
+
+
+
+@media (max-width:700px){
+    .sidebar{
+        position: relative;
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 78px;
+      background: black;
+      padding: 6px 14px;
+      z-index: 99;
+      transition: all 0.5s ease;
+    }
+
+    .home-section{
+        transition: transform 0.2s linear;
+      position: relative;
+      background-color: white;
+      min-height: 100vh;
+      top: 0;
+      left: 78px;
+      width: calc(100% - 78px);
+      transition: all 0.5s ease;
+      z-index: 2;
+    }
+    
+    #menu-icon{
+        display: none;
+    }
+
+    .sidebar ul{
+        margin-left: -30px;
+        position: absolute;
+        top: 0;
+        padding:  30px  ;
+    }
+    
+     span{
+        display: none;
+    }
+     .logo{
+        display: none;
+    }
+}

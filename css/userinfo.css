@@ -141,21 +141,6 @@
     
 }
 
-.account-table tbody  td{
-    text-align: center;
-    background-color: aqua;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.562);
-    color: black;
-    /* padding: 8px 10px; */
-}
-
-
-
-
-
-
-
-
 /* theme change */
 
 /* black */
@@ -165,31 +150,6 @@
 .dark .sidebar{
     background-color: black;
 }
-
-
-
-/* .div-container{
-    display: flex;
-}
-.users-div{
-    border-radius: 10px;
-    height: 200px;
-    width: 320px;
-    background-color: #A2B38B;
-}
-h6{
-    padding: 3px 20px;
-    font-size: 15px;
-}
-p{
-    color: blue;
-    position: relative;
-    left: 100px;
-    bottom: 30px;
-} */
-
-
-
 
 
 
